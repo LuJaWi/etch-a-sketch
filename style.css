@@ -1,0 +1,18 @@
+body {
+  font-family: sans-serif;
+}
+
+.page-contents {
+  display: flex;
+  flex-direction: row;
+}
+
+.etch-a-sketch {
+  display: flex-wrap;
+  height: 1024px;
+  width: 1024px;
+}
+
+.eas-pixel {
+  border: solid 1px;
+}
