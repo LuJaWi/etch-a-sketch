@@ -15,4 +15,6 @@ body {
 
 .eas-pixel {
   border: solid 1px;
+  height: 100px;
+  width: 100px;
 }
