@@ -1,5 +1,10 @@
 body {
   font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 98vh;
+  width: 100vw;
 }
 
 .page-contents {
@@ -8,13 +13,13 @@ body {
 }
 
 .etch-a-sketch {
-  display: flex-wrap;
-  height: 1024px;
-  width: 1024px;
+  display: flex;
+  flex-wrap: wrap;
+  height: 50vh;
+  width: 50vh;
+  border: solid 5px;
 }
 
 .eas-pixel {
-  border: solid 1px;
-  height: 100px;
-  width: 100px;
+  box-sizing: border-box;
 }
