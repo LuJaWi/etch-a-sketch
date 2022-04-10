@@ -19,11 +19,13 @@ easPixels.forEach(pixel => {
 
 const resetEAS = document.querySelector(".reset-button")
 
-// Add event listener that adds a class on mouse over
+// Add event listeners that can influence every pixel
 easPixels.forEach(pixel => {
+    // adds class on mouseover (per pixel)
     pixel.addEventListener('mouseover', () => {
         pixel.classList.add("grayfill");
     });
+    // resets all pixels when 'reset' button is clicked
     resetEAS.addEventListener('click', () => {
         pixel.classList.remove("grayfill");
     }); 
