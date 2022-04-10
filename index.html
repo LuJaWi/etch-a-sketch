@@ -13,10 +13,15 @@
     <div class = "page-content">
         <div class = "settings-panel">
             <div>Settings</div>
+            <div class="canvas-size-slider">
+                <input type="range" min="1" max="25" value="10" class="slider" id="canvas-size" oninput="updateCanvasSize()">
+            </div>
             <input type="radio" id="black" value="black" name="eas-color-setting" checked>
             <label for="black">Black</label><br>
             <input type="radio" id="rainbow" value="rainbow" name="eas-color-setting">
-            <label for="rainbow">Rainbow</label>
+            <label for="rainbow">Rainbow</label><br>
+            <input type="radio" id="eraser" value="eraser" name="eas-color-setting">
+            <label for="eraser">Eraser</label>
         <div>
             <button class="reset-button">Reset</button>
         </div>
