@@ -5,7 +5,7 @@ let easPixelEdgeLength = String(50/pixelEdgeCount + 'vh'); // heigth/width of ea
 
 // Creates grid based on pixel edge count
 for (i = pixelEdgeCount**2; i>0; i--) {
-    easSelector.innerHTML += "<div class='eas-pixel'></div>"
+    easSelector.innerHTML += '<div class="eas-pixel"></div>';
 };
 
 const easPixels = document.querySelectorAll(".eas-pixel"); // Query selector for all created pixels
@@ -14,12 +14,18 @@ const easPixels = document.querySelectorAll(".eas-pixel"); // Query selector for
 easPixels.forEach(pixel => {
     pixel.style.height = easPixelEdgeLength;
     pixel.style.width = easPixelEdgeLength;
-    pixel.style.border = 'solid 1px'
+    pixel.style.border = 'solid 1px';
 });
+
+const resetEAS = document.querySelector(".reset-button")
 
 // Add event listener that adds a class on mouse over
 easPixels.forEach(pixel => {
     pixel.addEventListener('mouseover', () => {
-        pixel.classList.add('grayfill')
+        pixel.classList.add("grayfill");
     });
+    resetEAS.addEventListener('click', () => {
+        pixel.classList.remove("grayfill");
+    }); 
 });
+
