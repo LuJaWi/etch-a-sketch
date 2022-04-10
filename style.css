@@ -23,3 +23,7 @@ body {
 .eas-pixel {
   box-sizing: border-box;
 }
+
+.grayfill {
+  background-color: rgb(48, 48, 48);
+}
