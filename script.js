@@ -96,7 +96,7 @@ function initializeEventListeners() {
 
         // Eraser Mode
         if(document.getElementById('eraser').checked){
-            pixel.style.backgroundColor = 'rgb(255,255,255, 0)';}
+            pixel.style.backgroundColor = 'rgb(0, 0, 0, 0)';}
 
     });
     // resets all pixels when 'reset' button is clicked
